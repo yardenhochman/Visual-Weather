@@ -1,0 +1,34 @@
+<% include ../partials/boilerplate %>
+
+    <div class='locations'>
+<% locationList.forEach( location => { %>
+    <h1><%=location.name%></h1>
+    <h1><%=location.lon%></h1>
+    <form action="/auth/<%=location.name%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete" />
+    </form>
+    <div>
+        <form method="POST" action="/weather/searchzip">
+            <input id="lat" name="lat" type="hidden" value="location.lat">
+            <input id="long" name="long" type="hidden" value="location.lon"> 
+            <button id='submit'>Submit</button>
+        </form>
+    </div>
+
+
+
+<%}) %>
+
+</div>
+
+add a location
+<div>
+    <form method="POST" action="/auth/searchzip">
+    <input id='zipcode' name="zipcode" type="text" placeholder="your zipcode #" required />
+     <button id='submit'>Submit</button>
+    </form>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,36 @@
+{
+  "name": "outside",
+  "version": "1.0.0",
+  "description": "a website showing how its like outside your home right now",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yarden hochman",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "cookies-parser": "^1.2.0",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "heroku": "^0.2.0",
+    "isomorphic-fetch": "^2.2.1",
+    "method-override": "^2.3.9",
+    "morgan": "^1.8.2",
+    "node-fetch": "^1.7.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg-promise": "^6.5.1",
+    "salt": "^0.5.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

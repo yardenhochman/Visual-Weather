@@ -1,0 +1,28 @@
+
+
+
+<% include ./partials/boilerplate %>
+
+<div>
+    <form method="POST" action="/weather/searchzip">
+    <input id='zipcode' name="zipcode" type="text" placeholder="your zipcode #" required />
+     <button id='submit'>Submit</button>
+    </form>
+</div>
+
+<div class="button">
+    <button class="auto">Automatic</button>  
+    <form action="/weather/searchauto" method="POST" id="latlongForm">
+        <input id="lat" name="lat" type="hidden" value="">
+        <input id="long" name="long" type="hidden" value="">
+    </form>
+</div>
+
+
+<script src="locationFinder.js"></script>
+<% include ./partials/end %>
+
+
+
+
+
